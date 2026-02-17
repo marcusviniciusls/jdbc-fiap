@@ -1,75 +1,93 @@
-JDBC FIAP — CRUD com Java e MySQL
+# JDBC FIAP — CRUD com Java e MySQL
 
-Este projeto demonstra a implementação de um CRUD completo utilizando Java puro com JDBC (Java Database Connectivity) para acessar um banco de dados relacional MySQL. Ele foi desenvolvido como projeto avaliativo para a disciplina de desenvolvimento de aplicações corporativas da FIAP.
+Este projeto demonstra a implementação de um **CRUD completo utilizando Java com JDBC (Java Database Connectivity)** para acesso a banco de dados relacional MySQL.  
 
-Visão geral
+Foi desenvolvido como projeto avaliativo para a disciplina de desenvolvimento de aplicações corporativas da FIAP, com foco em organização, boas práticas e clareza arquitetural.
 
-O objetivo é apresentar como uma aplicação Java pode se conectar a um banco de dados, executar operações SQL básicas (create, read, update, delete) e organizar o acesso a dados de forma clara e modular. JDBC é a API fundamental para interação com bancos de dados em Java e serve de base para frameworks mais avançados como JPA e Spring Data.
+---
 
-O código contém:
+## 📌 Visão Geral
 
-• Conexão com banco via arquivo de propriedades (db.properties)
-• Estrutura de modelos (POJOs) representando as entidades
-• DAO (Data Access Object) para encapsular lógica de acesso
-• Operações de CRUD com tratamento de exceções
-• Exemplo de uso via classe principal Main
+O objetivo deste projeto é demonstrar como uma aplicação Java pode:
 
-Estrutura do projeto
+- Estabelecer conexão com banco de dados via JDBC  
+- Executar operações SQL (Create, Read, Update e Delete)  
+- Organizar o código utilizando o padrão **DAO (Data Access Object)**  
+- Aplicar boas práticas no gerenciamento de recursos e exceções  
+
+JDBC é a API base de acesso a dados no ecossistema Java e serve como fundamento para frameworks como JPA, Hibernate e Spring Data.
+
+---
+
+## 🏗 Estrutura do Projeto
+
 jdbc-fiap/
 ├── src/main/java
-│   ├── app/            # Classe principal e lógica de fluxo
-│   ├── model/          # Entidades Java (ex: Cliente, Produto)
-│   ├── dao/            # Interfaces e implementações DAO
-│   └── util/           # Helpers (ex: conexão JDBC)
-├── db.properties       # Configurações do banco de dados
+│ ├── app/ # Classe principal e fluxo da aplicação
+│ ├── model/ # Entidades (POJOs)
+│ ├── dao/ # Camada de acesso a dados (DAO)
+│ └── util/ # Classe de conexão e utilitários
+├── db.properties # Configurações de conexão com o banco
 ├── .gitignore
 └── README.md
 
-Requisitos
 
-Antes de rodar o projeto, você precisa ter:
+---
 
-• JDK instalado (Java 8 ou superior)
-• MySQL (ou outro banco relacional compatível)
-• Driver JDBC para MySQL no classpath (ex: mysql-connector-java.jar)
-• IDE como IntelliJ ou Eclipse (opcional)
+## ⚙️ Requisitos
 
-Configuração do banco
+Antes de executar o projeto, é necessário:
 
-Crie um banco chamado jdbc_fiap (ou outro nome, desde que combinado com db.properties).
+- JDK 8 ou superior  
+- MySQL instalado  
+- Driver JDBC do MySQL adicionado ao classpath  
+- IDE (IntelliJ, Eclipse ou similar)
 
-Execute o script SQL incluído (se aplicável) para criar as tabelas iniciais.
+---
 
-Atualize db.properties com sua URL, usuário e senha do banco:
+## 🛠 Configuração do Banco de Dados
 
+1. Criar um banco de dados (exemplo: `jdbc_fiap`)
+2. Criar as tabelas necessárias conforme o modelo utilizado no projeto
+3. Configurar o arquivo `db.properties`:
+
+```properties
 jdbc.url=jdbc:mysql://localhost:3306/jdbc_fiap
 jdbc.username=root
-jdbc.password=minha_senha
+jdbc.password=sua_senha
+▶️ Executando o Projeto
+Importar o projeto na IDE
 
+Garantir que o driver JDBC esteja configurado
 
-Note que é necessário o driver JDBC correto para a sua versão do MySQL.
+Executar a classe principal (Main.java)
 
-Executando o projeto
+Testar as operações de CRUD
 
-Importe o projeto para a sua IDE
+✅ Boas Práticas Aplicadas
+Uso de PreparedStatement para prevenção de SQL Injection
 
-Certifique-se de que as dependências JDBC estão adicionadas
+Separação de responsabilidades através do padrão DAO
 
-Compile e execute a classe principal (Main.java)
+Encapsulamento da lógica de conexão
 
-Teste as operações de CRUD para ver como a aplicação lê e grava dados
+Fechamento adequado de recursos (Connection, Statement, ResultSet)
 
-Boas práticas demonstradas
+Tratamento estruturado de exceções SQL
 
-• Uso de PreparedStatement para evitar SQL injection
-• Separação de responsabilidades via camada DAO
-• Fechamento correto de recursos (Connection, Statement, ResultSet)
-• Tratamento de exceções SQL
+🚀 Possíveis Evoluções
+Este projeto pode evoluir para:
 
-Próximos passos
+Implementação de controle transacional
 
-Esse projeto serve de base para evoluções futuras, como:
+Integração com Spring Boot
 
-• Adicionar tratamento transacional
-• Migrar para Spring JDBC Template ou JPA/Hibernate
-• Criar interface REST para expor o CRUD sobre HTTP
+Migração para JPA / Hibernate
+
+Criação de API REST
+
+Implementação de testes automatizados
+
+👨‍💻 Autor
+Marcus Vinicius
+Projeto acadêmico desenvolvido para avaliação técnica – FIAP.
