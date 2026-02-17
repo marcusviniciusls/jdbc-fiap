@@ -4,6 +4,11 @@ Este projeto demonstra a implementação de um **CRUD completo utilizando Java c
 
 Foi desenvolvido como projeto avaliativo para a disciplina de desenvolvimento de aplicações corporativas da FIAP, com foco em organização, boas práticas e clareza arquitetural.
 
+## Apresentação
+https://www.canva.com/design/DAHBlx9Tgs8/OV5yPOXExeJE06sU1EckrQ/edit?utm_content=DAHBlx9Tgs8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+## Video da apresentação no youtube
+
 ---
 
 ## 📌 Visão Geral
