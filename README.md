@@ -27,14 +27,14 @@ JDBC é a API base de acesso a dados no ecossistema Java e serve como fundamento
 ## 🏗 Estrutura do Projeto
 
 jdbc-fiap/
-├── src/main/java
-│ ├── app/ # Classe principal e fluxo da aplicação
-│ ├── model/ # Entidades (POJOs)
-│ ├── dao/ # Camada de acesso a dados (DAO)
-│ └── util/ # Classe de conexão e utilitários
-├── db.properties # Configurações de conexão com o banco
-├── .gitignore
-└── README.md
+- src/main/java
+- app/ # Classe principal e fluxo da aplicação
+- model/ # Entidades (POJOs)
+- dao/ # Camada de acesso a dados (DAO)
+  - util/ # Classe de conexão e utilitários
+- db.properties # Configurações de conexão com o banco
+- .gitignore
+- README.md
 
 
 ---
