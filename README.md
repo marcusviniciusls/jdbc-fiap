@@ -9,6 +9,15 @@ https://www.canva.com/design/DAHBlx9Tgs8/OV5yPOXExeJE06sU1EckrQ/edit?utm_content
 
 ## Video da apresentação no youtube
 
+
+## Apresentação PDF
+[Apresentação - JDBC Java Basics.pdf](https://github.com/user-attachments/files/25374377/Apresentacao.-.JDBC.Java.Basics.pdf)
+
+## Curriculo
+[marcusvinicius-cv-english.pdf](https://github.com/user-attachments/files/25374380/marcusvinicius-cv-english.pdf)
+
+
+
 ---
 
 ## 📌 Visão Geral
