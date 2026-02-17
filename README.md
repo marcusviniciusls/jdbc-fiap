@@ -8,7 +8,7 @@ Foi desenvolvido como projeto avaliativo para a disciplina de desenvolvimento de
 https://www.canva.com/design/DAHBlx9Tgs8/OV5yPOXExeJE06sU1EckrQ/edit?utm_content=DAHBlx9Tgs8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 ## Video da apresentação no youtube
-https://www.youtube.com/watch?v=XNNsBBTAhlE
+<a>https://www.youtube.com/watch?v=XNNsBBTAhlE</a>
 
 ## Apresentação PDF
 [Apresentação - JDBC Java Basics.pdf](https://github.com/user-attachments/files/25374377/Apresentacao.-.JDBC.Java.Basics.pdf)
